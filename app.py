@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 app=Flask(__name__)
-model = joblib.load('car_price_model.pkl')
+model = joblib.load('car_price_grad_boost_model.pkl')
 car=pd.read_csv('Cleaned_Car_data.csv')
 
 companies=sorted(car['company'].unique())
